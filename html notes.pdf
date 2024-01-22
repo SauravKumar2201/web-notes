@@ -3,7 +3,6 @@ what is HTML?
   HTML gives structure to the webpages
   It conatin text which ae known as tag.
   Tags are understandable by the browsers.
-
 ------------------------------------------
 <!DOCTYPE html>
 <html>
