@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html style="background: rgb(220, 201, 238);">
+    <head>
+        <title>Form</title>
+    </head>
+
+    <body>       
+
+        <!-- HTML 5 form -->
+
+        <!-- Fieldset and Legend provide structure and a title for the form -->
+        <form>
+            <fieldset>
+                <legend><strong><mark>Basic HTML Form</mark></strong></legend>
+
+                <!-- Input for Name -->
+                <b>Name: </b> <input type="text" name="name" value="" required="" autofocus="" maxlength="20" placeholder="Enter your name here... ">
+                <!-- Text input for the user's name with attributes for required, autofocus, and maximum length -->
+                <br/>
+                <br/>
+
+                <!-- Textarea for Address -->
+                <b>Address: </b> <textarea name="Address" placeholder="Enter your Address here"></textarea>
+                <!-- Textarea for the user's address -->
+                <br/>
+                <br/>
+
+                <!-- Radio Buttons for Gender -->
+                <b>Gender: </b>
+                <input type="radio" value="m" name="gender"/> Male
+                <input type="radio" value="f" name="gender"/> Female
+                <input type="radio" value="o" name="gender"/> Other
+                <!-- Radio buttons for selecting gender -->
+                <br/>
+                <br/>
+
+                <!-- Dropdown for Nationality -->
+                <b>Nationality: </b>
+                <select>
+                    <option>please select your country</option>
+                    <optgroup label="ASIA">
+                        <option value="India">India</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                    </optgroup>
+                    <optgroup label="EUROPE">
+                        <option value="USA">USA</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                    </optgroup>
+                </select>
+                <!-- Dropdown menu for selecting nationality -->
+                <br/>
+                <br/>
+
+                <!-- Checkboxes for Department -->
+                <b>Department: </b>
+                <br/>
+                <input type="checkbox" value="IT"/> Information Technology<br/>
+                <input type="checkbox" value="ITBI" checked=""/> Information Technology- Business Informatics<br/>
+                <input type="checkbox" value="ECE"/> Electronic and Communication <br/>
+                <!-- Checkboxes for selecting one or more departments -->
+                <br/>
+
+                <!-- File Input for Resume -->
+                <b>Resume: </b>
+                <input type="file" name="resume" />
+                <!-- File input for uploading a resume -->
+                <br/>
+                <br/>
+
+                <!-- Number Input for Age -->
+                <b>Age :</b>
+                <input type="number" name="age" min="1" max="60"/>
+                <!-- Number input for entering the user's age with minimum and maximum values -->
+                <br/>
+                <br/>
+
+                <!-- Color Input -->
+                <b>Color: </b>
+                <input type="color" name="color" value="#FF0000"/>
+                <!-- Color picker for selecting a color with a default value -->
+                <br/>
+                <br>
+
+                <!-- Email Input -->
+                <b>Email: </b>
+                <input type="email" name="email" placeholder="abc@gmail.com"/>
+                <!-- Email input for entering the user's email -->
+                <br/>
+                <br/>
+
+                <!-- Password Input -->
+                <b>Password: </b>
+                <input type="password" name="password" placeholder=""/>
+                <!-- Password input for entering a password -->
+                <br/>
+                <br/>
+
+                <!-- Additional Section for Calendar Elements -->
+
+                <!-- Date Input -->
+                <b>Date: </b>
+                <input type="date" name="date"/>
+                <!-- Date input for selecting a date -->
+                <br/>
+                <br/>
+
+                <!-- DateTime-Local Input -->
+                <b>Date Time: </b>
+                <input type="datetime-local" name=""/>
+                <!-- DateTime-Local input for selecting date and time -->
+                <br/>
+                <br/>
+
+                <!-- Time Input -->
+                <b>Time: </b>
+                <input type="time" name=""/>
+                <!-- Time input for selecting a time -->
+                <br/>
+                <br/>
+
+                <!-- Week Input -->
+                <b>Week: </b>
+                <input type="week" name="">
+                <!-- Week input for selecting a week -->
+                <br/>
+                <br/>
+
+                <!-- Range Input -->
+                <b>Range: </b>
+                <input type="range" name="">
+                <!-- Range input for selecting a value within a range -->
+                <br/>
+                <br/>
+
+
+                <!-- HTML 5 Form Attributes -->
+            
+                <!-- Hidden Input -->
+                <input type="hidden" name="later"/>
+                <!-- Hidden input for including additional data not shown to the user -->
+
+                <!-- Submit and Reset Buttons -->
+                <input type="submit" value="send" />
+                <!-- Submit button for submitting the form -->
+                <input type="reset" value="reset" />
+                <!-- Reset button for resetting the form fields -->
+                <br/>
+                <br/>
+
+                <!-- Read-Only and Disabled Input -->
+                <input type="text" value="Good luck" readonly="" disabled=""/>
+                <!-- Readonly input that can be read but not modified -->
+                <!-- Disabled input that is not editable or selectable, and its value won't be submitted -->
+            </fieldset>
+        </form>
+           
+    </body>
+</html>
+
+
+<!--
+    Here is a list of HTML elements and attributes used in the provided form:
+
+### HTML Elements:
+
+1. <form> - Represents an HTML form.
+2. <fieldset> - Groups related elements in a form and provides a visual structure.
+3. `<legend>` - Represents a caption for the content of a `<fieldset>`.
+4. `<input>` - Represents an input field.
+5. `<textarea>` - Represents a multi-line text input control.
+6. `<select>` - Represents a dropdown menu.
+   - `<option>` - Represents an option in a `<select>` dropdown.
+   - `<optgroup>` - Groups related options in a `<select>` dropdown.
+7. `<b>` - Represents bold text.
+8. `<br>` - Represents a line break.
+9. `<mark>` - Represents text highlighted for reference purposes.
+
+### Input Types and Their Attributes:
+
+1. Text Input:
+   - `<input type="text">`
+     - `name` - Specifies the name of the input.
+     - `value` - Specifies the initial value.
+     - `required` - Specifies that the input must be filled out.
+     - `autofocus` - Specifies that the input should be focused when the page loads.
+     - `maxlength` - Specifies the maximum number of characters allowed.
+
+2. Radio Buttons:
+   - `<input type="radio">`
+     - `value` - Specifies the value associated with the radio button.
+     - `name` - Specifies the name of the radio button group.
+
+3. Dropdown (Select):
+   - `<select>`
+   - `<option>`
+     - `value` - Specifies the value associated with the option.
+   - `<optgroup>` - Groups related options.
+     - `label` - Specifies the label for the group.
+
+4. Checkboxes:
+   - `<input type="checkbox">`
+     - `value` - Specifies the value associated with the checkbox.
+
+5. File Input:
+   - `<input type="file">`
+     - `name` - Specifies the name of the input.
+
+6. Number Input:
+   - `<input type="number">`
+     - `name` - Specifies the name of the input.
+     - `min` - Specifies the minimum value.
+     - `max` - Specifies the maximum value.
+
+7. Color Input:
+   - `<input type="color">`
+     - `name` - Specifies the name of the input.
+     - `value` - Specifies the initial color value.
+
+8. Email Input:
+   - `<input type="email">`
+     - `name` - Specifies the name of the input.
+     - `placeholder` - Specifies a short hint that describes the expected value.
+
+9. Password Input:
+   - `<input type="password">`
+     - `name` - Specifies the name of the input.
+     - `placeholder` - Specifies a short hint that describes the expected value.
+
+10. Date Input:
+    - `<input type="date">`
+      - `name` - Specifies the name of the input.
+
+11. DateTime-Local Input:
+    - `<input type="datetime-local">`
+      - `name` - Specifies the name of the input.
+
+12. Time Input:
+    - `<input type="time">`
+      - `name` - Specifies the name of the input.
+
+13. Week Input:
+    - `<input type="week">`
+      - `name` - Specifies the name of the input.
+
+14. Range Input:
+    - `<input type="range">`
+      - `name` - Specifies the name of the input.
+
+15. Hidden Input:
+    - `<input type="hidden">`
+      - `name` - Specifies the name of the input.
+
+16. Submit and Reset Buttons:
+    - `<input type="submit">`
+    - `<input type="reset">`
+
+17. Read-Only and Disabled Input:
+    - `<input type="text" readonly disabled>`
+
+### Note:
+- The `checked` attribute is used for the "ITBI" checkbox to make it checked by default.
+- The value attribute is used to set default values for certain input types.
+- Other attributes such as `placeholder` and `maxlength` are used for providing additional information or constraints on the input fields.
+-->
