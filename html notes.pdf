@@ -1,0 +1,572 @@
+what is HTML?
+  HTML stands for Hypertext Markup language.
+  HTML gives structure to the webpages
+  It conatin text which ae known as tag.
+  Tags are understandable by the browsers.
+
+------------------------------------------
+<!DOCTYPE html>
+<html>
+   <head>
+         <!-- The DOCTYPE declaration defines the document type and version of HTML -->
+         <!-- The head section contains metadata about the document, such as the title -->
+         <title>Form</title>
+   </head>
+
+   <body>
+        <!-- The body section contains the content of the webpage -->
+        <!-- ... -->
+   </body>
+</html>
+
+-----------------------------------------
+<!-- Heading Tags (h1 to h6) used to define headings -->
+<h1></h1> <!-- Heading level 1 -->
+<h2></h2> <!-- Heading level 2 -->
+<h3></h3> <!-- Heading level 3 -->
+<h4></h4> <!-- Heading level 4 -->
+<h5></h5> <!-- Heading level 5 -->
+<h6></h6> <!-- Heading level 6 -->
+-----------------------------------------
+There is basically two types of tag 
+
+ 1.open tag- It doesnt has range 
+     <br/>  to break the line
+     <hr/>  to make a horizontal line 
+     <img/> for image 
+
+ 2. close tage- It has a range 
+     <p> </p>
+     <body> </body>
+     <title></title>
+
+--------------------------------------
+Basic Tags 
+ 
+<!-- Basic tags -->
+<b></b>             <!-- Bolds the text -->
+<strong></strong>   <!-- Represents strong importance (bold) -->
+<p></p>            <!-- Defines a paragraph -->
+<i></i>            <!-- Represents italic text -->
+<u></u>            <!-- Represents underlined text -->
+<mark></mark>      <!-- Represents text highlighted for reference -->
+<del></del>        <!-- Represents deleted (strikethrough) text -->
+<!-- Comment -->
+<center></center>  Deprecated: Center-aligns text on the page 
+                       browser ke center pai text likhta hai
+                     text ko center mai lata hai na ki tag ko center mai laata hai.
+ ---------------------------------------
+List Tags
+<!-- The <ul> (unordered list) tag is used to create a list -->
+<!-- The <li> (list item) tag is used to define each item in the list -->
+
+ 1. Ordered List
+   <ol> </ol>    ordered List
+   <li> </li>    list items
+     types <ol types=""></ol>
+        (numerical) 1.html  <ol types="1"></ol>
+                    2.css
+                    3.JavaScript
+        (Alphabateical)
+                    A(uppercase)  =     <ol types="A"></ol>
+                    a(lowecase)         <ol types="a"></ol>
+                    I(uppercase Roman)  <ol types="I"></ol>
+                    i(lowercase roman)  <ol types="i"></ol>
+
+ 2. Unordered list
+    <ul> </ul>
+    <li></li>
+       types 
+            disc          <ul types="disc"></ul>
+            circle        <ul types="circle"></ul>
+            square        <ul types="square"></ul>
+            none          <ul types="none"></ul>
+               - example  html
+                          css
+                          JavaScript
+
+----------------------------------------------------
+Nested list
+<!-- Nested lists are created by placing <ul> or <ol> (ordered list) tags inside <li> tags -->
+
+<ul>
+    <!-- Frontend section -->
+    <li>
+        Frontend
+        <!-- Nested unordered list for frontend technologies -->
+        <ul>
+            <!-- HTML section -->
+            <li>HTML
+                <!-- Nested ordered list for HTML versions -->
+                <ol>
+                    <li>HTML5</li>
+                </ol>
+            </li>
+            <!-- CSS section -->
+            <li>CSS
+                <!-- Nested ordered list for CSS versions and Bootstrap -->
+                <ol>
+                    <li>CSS3</li>
+                    <li>Bootstrap</li>
+                </ol>
+            </li>
+            <!-- JavaScript section -->
+            <li>JavaScript
+                <!-- Nested ordered list for JavaScript frameworks/libraries -->
+                <ol>
+                    <li>jQuery</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+
+    <!-- Backend section -->
+    <li>
+        Backend
+        <!-- Nested unordered list for backend technologies -->
+        <ul>
+            <!-- PHP section -->
+            <li>PHP</li>
+            <!-- Database section -->
+            <li>Database</li>
+        </ul>
+    </li>
+</ul>
+
+   Frontend                       
+      html
+        html 5
+      css
+        css3
+        Bootstrap
+      JavaScript
+       JQuery
+
+    Backend
+      PHP
+      Database
+      Ajax
+
+----------------------------------
+Image Tag and its attribute-
+<!-- The <img> tag is used to insert images on a web page -->
+<!-- It is a self-closing tag with no closing tag like <img /> -->
+
+<!-- Attributes: -->
+<!-- src attribute specifies the source URL or file path of the image -->
+<!-- title attribute provides additional information about the image (displayed as a tooltip) -->
+<!-- alt attribute specifies alternative text to be displayed if the image is not available -->
+<!-- height attribute sets the height of the image -->
+<!-- width attribute sets the width of the image -->
+
+<img src="Images/web/saurav.jpg" title="saurav" alt="This image is missing" height="100px" width="100px"/>
+<!-- The above example inserts an image with source 'Images/web/saurav.jpg' -->
+<!-- The height and width attributes set the dimensions of the image to 100 pixels each -->
+
+--------------------------------------
+Anchor Tag
+<!-- The <a> tag defines a hyperlink, which is used to link from one page to another -->
+<!-- It is a close tag -->
+
+<!-- href attribute indicates the link's destination -->
+<!-- target attribute specifies where to open the linked document -->
+<!-- _blank opens the link in a new browser window or tab -->
+<!-- _parent opens the link in the parent frame (if the link is in a frame) -->
+<!-- If no target is specified, the default behavior is to open in the same window -->
+
+<a href="https://www.google.com" target="_blank"></a>
+<!-- The above example links to www.google.com and opens it in a new window or tab -->
+
+<a href="image.html" target="_parent"></a>
+<!-- The above example links to image.html and opens it in the parent frame -->
+
+<a href="images/web/image.jpg" target="_parent">show image</a>
+<!-- The above example links to the image.jpg file in the 'images/web' directory -->
+<!-- It displays the text 'show image' as the clickable link -->
+<!-- The link opens in the parent frame -->
+
+---------------------------------------------
+<!-- Superscript: pow(a,2) + pow(b,2) represents aSquare + bSquare -->
+<!-- The <sup> tag is used to create superscript text -->
+a<sup>2</sup> + b<sup>2</sup>
+
+<!-- Subscript: log(bas2)10 represents log base 2 of 40 -->
+<!-- The <sub> tag is used to create subscript text -->
+log<sub>2</sub>40
+
+------------------------------------------------------
+<!-- The <meter> tag is used to represent a gauge or progress bar -->
+<!-- min attribute sets the minimum value of the range -->
+<!-- max attribute sets the maximum value of the range -->
+<!-- value attribute sets the current value within the specified range -->
+<meter min="0" max="100" value="20"></meter>
+
+-----------------------------------------
+HTML TAble Tag
+<!-- The <table> tag is used to create a table -->
+<table border="1px">
+  <!-- The <thead> tag defines the head of the table -->
+  <thead>
+    <!-- The <tr> tag defines a new row in the table head -->
+    <tr>
+      <!-- The <th> tag is used to show the heading of each column in the table row -->
+      <th>Semester</th>
+      <th>Fees</th>
+    </tr>
+  </thead>
+  
+  <!-- The <tbody> tag defines the body of the table -->
+  <tbody>
+    <!-- The <tr> tag defines a new row in the table body -->
+    <tr>
+      <!-- The <td> tag is used to define table data -->
+      <td>5th</td>
+      <td>100k</td>
+    </tr>
+    <tr>
+      <td>6th</td>
+      <td>200k</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Table Attributes -->
+<!-- bgcolor sets the background color of the table -->
+<!-- align sets the alignment of the table -->
+<!-- border sets the border width of the table -->
+<!-- cellspacing sets the space between cells on the outer side of the table -->
+<!-- cellpadding sets the space between the content of a cell and its border -->
+<!-- width sets the width of the table -->
+<!-- height sets the height of the table -->
+<table bgcolor="red" align="center" border="10" cellspacing="5" cellpadding="5" width="500" height="500"></table>
+
+<!-- Row Attributes -->
+<!-- bgcolor sets the background color of the table row and overrides the table's bgcolor -->
+<!-- align sets the alignment of the content within the table row -->
+<tr bgcolor="yellow" align="center"></tr>
+
+<!-- Cell Attributes -->
+<!-- bgcolor sets the background color of the table cell -->
+<!-- colspan spans a cell across multiple columns -->
+<!-- rowspan spans a cell across multiple rows -->
+<td bgcolor="red" colspan="2"></td>
+<td bgcolor="green" rowspan="2"></td>
+
+------------------------------------------------------------------
+HTML form 
+
+  an html form is used to collect user input.
+  The user input can then be send to server for processing .
+
+<form></form>  tag is used to create form .
+
+  List of elements-  Text input controls.
+                     checkboxes contrils.
+                     radio box controls.
+                     select box controls.
+                     file select boxes.
+                     Hidden controls.
+                     clickable buttons.
+                     submit and reset buttons.
+
+form tag and its elements tag
+ 
+ <form></form> 
+             Textbox- it is used to take small text as input.
+             Textarea - It is used to take large text as input.
+             Radio Button - It is used to select only one item among 2-3.
+             submit buttion- used to submit the form.
+             reset button
+             select box- dropdown jaisa khulta hai na voh slect krne ke liye.
+                        - <optgroup></optgroup>
+                          <option></option>
+             checkbox- u can selecet mutiple option
+             file input- choose and file and fill.
+             <fieldset></fieldset>
+                   <legend></legend>
+              color
+              email
+              password
+              Number
+              Hidden
+ <input/>  
+          type 
+          value
+          placeholder
+
+
+HTML 5 Calender Elements 
+<input>----</input>  Date 
+                     Datetime -local
+                     Time 
+                     Month 
+                     week 
+                     Range 
+
+
+Here is a list of HTML elements and attributes used in the provided form:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+
+    <body>       
+
+        <!-- HTML 5 form -->
+
+        <!-- Fieldset and Legend provide structure and a title for the form -->
+        <form>
+            <fieldset>
+                <legend><strong><mark>Basic HTML Form</mark></strong></legend>
+
+                <!-- Input for Name -->
+                <b>Name: </b> <input type="text" name="name" value="" required="" autofocus="" maxlength="20" placeholder="Enter your name here... ">
+                <!-- Text input for the user's name with attributes for required, autofocus, and maximum length -->
+                <br/>
+                <br/>
+
+                <!-- Textarea for Address -->
+                <b>Address: </b> <textarea name="Address" placeholder="Enter your Address here"></textarea>
+                <!-- Textarea for the user's address -->
+                <br/>
+                <br/>
+
+                <!-- Radio Buttons for Gender -->
+                <b>Gender: </b>
+                <input type="radio" value="m" name="gender"/> Male
+                <input type="radio" value="f" name="gender"/> Female
+                <input type="radio" value="o" name="gender"/> Other
+                <!-- Radio buttons for selecting gender -->
+                <br/>
+                <br/>
+
+                <!-- Dropdown for Nationality -->
+                <b>Nationality: </b>
+                <select>
+                    <option>please select your country</option>
+                    <optgroup label="ASIA">
+                        <option value="India">India</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                    </optgroup>
+                    <optgroup label="EUROPE">
+                        <option value="USA">USA</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                    </optgroup>
+                </select>
+                <!-- Dropdown menu for selecting nationality -->
+                <br/>
+                <br/>
+
+                <!-- Checkboxes for Department -->
+                <b>Department: </b>
+                <br/>
+                <input type="checkbox" value="IT"/> Information Technology<br/>
+                <input type="checkbox" value="ITBI" checked=""/> Information Technology- Business Informatics<br/>
+                <input type="checkbox" value="ECE"/> Electronic and Communication <br/>
+                <!-- Checkboxes for selecting one or more departments -->
+                <br/>
+
+                <!-- File Input for Resume -->
+                <b>Resume: </b>
+                <input type="file" name="resume" />
+                <!-- File input for uploading a resume -->
+                <br/>
+                <br/>
+
+                <!-- Number Input for Age -->
+                <b>Age :</b>
+                <input type="number" name="age" min="1" max="60"/>
+                <!-- Number input for entering the user's age with minimum and maximum values -->
+                <br/>
+                <br/>
+
+                <!-- Color Input -->
+                <b>Color: </b>
+                <input type="color" name="color" value="#FF0000"/>
+                <!-- Color picker for selecting a color with a default value -->
+                <br/>
+                <br>
+
+                <!-- Email Input -->
+                <b>Email: </b>
+                <input type="email" name="email" placeholder="abc@gmail.com"/>
+                <!-- Email input for entering the user's email -->
+                <br/>
+                <br/>
+
+                <!-- Password Input -->
+                <b>Password: </b>
+                <input type="password" name="password" placeholder=""/>
+                <!-- Password input for entering a password -->
+                <br/>
+                <br/>
+
+                <!-- Additional Section for Calendar Elements -->
+
+                <!-- Date Input -->
+                <b>Date: </b>
+                <input type="date" name="date"/>
+                <!-- Date input for selecting a date -->
+                <br/>
+                <br/>
+
+                <!-- DateTime-Local Input -->
+                <b>Date Time: </b>
+                <input type="datetime-local" name=""/>
+                <!-- DateTime-Local input for selecting date and time -->
+                <br/>
+                <br/>
+
+                <!-- Time Input -->
+                <b>Time: </b>
+                <input type="time" name=""/>
+                <!-- Time input for selecting a time -->
+                <br/>
+                <br/>
+
+                <!-- Week Input -->
+                <b>Week: </b>
+                <input type="week" name="">
+                <!-- Week input for selecting a week -->
+                <br/>
+                <br/>
+
+                <!-- Range Input -->
+                <b>Range: </b>
+                <input type="range" name="">
+                <!-- Range input for selecting a value within a range -->
+                <br/>
+                <br/>
+
+
+                <!-- HTML 5 Form Attributes -->
+            
+                <!-- Hidden Input -->
+                <input type="hidden" name="later"/>
+                <!-- Hidden input for including additional data not shown to the user -->
+
+                <!-- Submit and Reset Buttons -->
+                <input type="submit" value="send" />
+                <!-- Submit button for submitting the form -->
+                <input type="reset" value="reset" />
+                <!-- Reset button for resetting the form fields -->
+                <br/>
+                <br/>
+
+                <!-- Read-Only and Disabled Input -->
+                <input type="text" value="Good luck" readonly="" disabled=""/>
+                <!-- Readonly input that can be read but not modified -->
+                <!-- Disabled input that is not editable or selectable, and its value won't be submitted -->
+            </fieldset>
+        </form>
+           
+    </body>
+</html>
+
+
+<!--
+    Here is a list of HTML elements and attributes used in the provided form:
+
+### HTML Elements:
+
+1. <form> - Represents an HTML form.
+2. <fieldset> - Groups related elements in a form and provides a visual structure.
+3. `<legend>` - Represents a caption for the content of a `<fieldset>`.
+4. `<input>` - Represents an input field.
+5. `<textarea>` - Represents a multi-line text input control.
+6. `<select>` - Represents a dropdown menu.
+   - `<option>` - Represents an option in a `<select>` dropdown.
+   - `<optgroup>` - Groups related options in a `<select>` dropdown.
+7. `<b>` - Represents bold text.
+8. `<br>` - Represents a line break.
+9. `<mark>` - Represents text highlighted for reference purposes.
+
+### Input Types and Their Attributes:
+
+1. Text Input:
+   - `<input type="text">`
+     - `name` - Specifies the name of the input.
+     - `value` - Specifies the initial value.
+     - `required` - Specifies that the input must be filled out.
+     - `autofocus` - Specifies that the input should be focused when the page loads.
+     - `maxlength` - Specifies the maximum number of characters allowed.
+
+2. Radio Buttons:
+   - `<input type="radio">`
+     - `value` - Specifies the value associated with the radio button.
+     - `name` - Specifies the name of the radio button group.
+
+3. Dropdown (Select):
+   - `<select>`
+   - `<option>`
+     - `value` - Specifies the value associated with the option.
+   - `<optgroup>` - Groups related options.
+     - `label` - Specifies the label for the group.
+
+4. Checkboxes:
+   - `<input type="checkbox">`
+     - `value` - Specifies the value associated with the checkbox.
+
+5. File Input:
+   - `<input type="file">`
+     - `name` - Specifies the name of the input.
+
+6. Number Input:
+   - `<input type="number">`
+     - `name` - Specifies the name of the input.
+     - `min` - Specifies the minimum value.
+     - `max` - Specifies the maximum value.
+
+7. Color Input:
+   - `<input type="color">`
+     - `name` - Specifies the name of the input.
+     - `value` - Specifies the initial color value.
+
+8. Email Input:
+   - `<input type="email">`
+     - `name` - Specifies the name of the input.
+     - `placeholder` - Specifies a short hint that describes the expected value.
+
+9. Password Input:
+   - `<input type="password">`
+     - `name` - Specifies the name of the input.
+     - `placeholder` - Specifies a short hint that describes the expected value.
+
+10. Date Input:
+    - `<input type="date">`
+      - `name` - Specifies the name of the input.
+
+11. DateTime-Local Input:
+    - `<input type="datetime-local">`
+      - `name` - Specifies the name of the input.
+
+12. Time Input:
+    - `<input type="time">`
+      - `name` - Specifies the name of the input.
+
+13. Week Input:
+    - `<input type="week">`
+      - `name` - Specifies the name of the input.
+
+14. Range Input:
+    - `<input type="range">`
+      - `name` - Specifies the name of the input.
+
+15. Hidden Input:
+    - `<input type="hidden">`
+      - `name` - Specifies the name of the input.
+
+16. Submit and Reset Buttons:
+    - `<input type="submit">`
+    - `<input type="reset">`
+
+17. Read-Only and Disabled Input:
+    - `<input type="text" readonly disabled>`
+
+### Note:
+- The `checked` attribute is used for the "ITBI" checkbox to make it checked by default.
+- The value attribute is used to set default values for certain input types.
+- Other attributes such as `placeholder` and `maxlength` are used for providing additional information or constraints on the input fields.
+-->
